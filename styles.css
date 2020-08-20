@@ -47,3 +47,21 @@ body {
 .nav-link a:hover {
     color: black;
 }
+
+/* Workshop styles*/
+
+.workshop-contents{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.workshop-content {
+    position: relative;
+}
+
+.workshop-background {
+    height: 350px;
+    width: 33%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

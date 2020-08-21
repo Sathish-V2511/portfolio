@@ -48,20 +48,71 @@ body {
     color: black;
 }
 
+/* About styles*/
+.about-contents {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.profile-image {
+    filter: grayscale(50%);
+}
+
 /* Workshop styles*/
 
 .workshop-contents{
+    margin: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
 }
 .workshop-content {
     position: relative;
 }
 
 .workshop-background {
-    height: 350px;
-    width: 33%;
+    height: 800px;
+    width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.workshop-text {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.logo {
+    width: 50%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.workshop-text .abstract {
+    transition: 1ms;
+    font-weight: 600px;
+    color: transparent;
+}
+
+.workshop-text:hover .abstract {
+    color: lightseagreen;
+    font-weight: 600;
+  }
+
+.darkening {
+    transition: 1ms;
+    filter: brightness(25%);
 }

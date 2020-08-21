@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Page Title</title>
+    <title>Workshop</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -45,10 +45,10 @@
 
                     <div class="workshop-text">
                         <div class="logo">
-                            <img src = "images/10.png">
+                            <img src = "images/10.png" style="width:500px;height:100%;">
                         </div>
                         <div class="abstract">
-                            Vellore Fort Pavilion
+                        Vellore Fort Pavilion
                         </div>
                     </div>
                 </div>
@@ -58,10 +58,10 @@
 
                     <div class="workshop-text">
                         <div class="logo">
-                            <img src = "images/10.png">
+                            <img src = "images/10.png" style="width:500px;height:100%;">
                         </div>
                         <div class="abstract">
-                            bamboo pavilion
+                        Bamboo pavilion
                         </div>
                     </div>
                 </div>
@@ -71,10 +71,10 @@
 
                     <div class="workshop-text">
                         <div class="logo">
-                            <img src = "images/10.png">
+                            <img src = "images/10.png" style="width:500px;height:100%;">
                         </div>
                         <div class="abstract">
-                            Urban Garages
+                        Urban Garages
                         </div>
                     </div>
                 </div>
@@ -83,4 +83,18 @@
         </div>
     </div>
 </body>
+<script>
+    const workshopcontents = document.querySelectorAll('.workshop-content');
+    workshopcontents.forEach(workshopcontent => {
+    workshopcontent.addEventListener('mouseover', () => {
+      console.log(workshopcontent.childNodes[1].classList)
+      workshopcontent.childNodes[1].classList.add('darkening');
+    });
+
+    workshopcontent.addEventListener('mouseout', () => {
+      console.log(workshopcontent.childNodes[1].classList)
+      workshopcontent.childNodes[1].classList.remove('darkening');
+    });
+  });
+</script>
 </html>

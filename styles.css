@@ -91,6 +91,7 @@ body {
   text-align: center;
   padding-left: 50px;
   padding-right: 50px;
+  padding-bottom: 40px;
 }
 
 .logo {
@@ -102,17 +103,60 @@ body {
 }
 
 .workshop-text .abstract {
-    transition: 1ms;
-    font-weight: 600px;
+    transition: 0.75s;
+    font-weight: 400px;
     color: transparent;
 }
 
 .workshop-text:hover .abstract {
-    color: lightseagreen;
-    font-weight: 600;
+    color: white;
+    font-weight: 400px;
+  }
+
+.workshop-text .logo {
+    transition: 0.75s;
+    filter: opacity(0%);
+}
+
+.workshop-text:hover .logo {
+    filter: opacity(100%);
+  }
+
+.workshop-text .workshop-link {
+    transition: 0.75s;
+    filter: opacity(0%);
+}
+
+.workshop-text:hover .workshop-link {
+    filter: opacity(100%);
   }
 
 .darkening {
-    transition: 1ms;
-    filter: brightness(25%);
+    transition: 0.75s;
+    /*filter: grayscale(100%);*/
+    filter: brightness(40%);
 }
+
+.workshop-link {
+    padding-bottom: 25px;
+    height: 20px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.75s;
+}
+
+.workshop-link a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.75s;
+}
+
+.workshop-link:hover {
+    border-bottom: 1px solid lightseagreen;
+}
+
+.workshop-link a:hover {
+    color: lightseagreen;
+}
+
+/* Carpentry workshop styles*/
+

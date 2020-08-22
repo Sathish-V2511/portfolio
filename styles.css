@@ -57,6 +57,7 @@ body {
     color: black;
 }
 
+
 /* About styles*/
 .about-contents {
     margin: 10px;
@@ -72,17 +73,17 @@ body {
 /* Workshop styles*/
 
 .workshop-contents{
-    margin: 10px;
+    margin: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 30px;
 }
 .workshop-content {
     position: relative;
 }
 
 .workshop-background {
-    height: 750px;
+    height: 760px;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -238,5 +239,23 @@ body {
   }
 
   .footer-content {
+    color: #707070;
     padding-right: 30px;
+    filter: opacity(50%);
   }
+
+  .footer-content a {
+    color: #707070;
+    transition: color 0.5s;
+    }
+
+    .footer-content:hover {
+        border-bottom: 1px solid transparent;
+        color: black;
+        filter: opacity(100%);
+    }
+
+    .footer-content a:hover {
+        color: black;
+        filter: opacity(100%);
+    }

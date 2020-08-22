@@ -106,7 +106,7 @@ body {
 
 .logo {
     width: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -144,9 +144,9 @@ body {
   }
 
 .darkening {
-    transition: 0.75s;
+    transition: 0.5s;
     /*filter: grayscale(100%);*/
-    filter: brightness(40%);
+    filter: brightness(25%);
 }
 
 .workshop-link {
@@ -163,11 +163,11 @@ body {
 }
 
 .workshop-link:hover {
-    border-bottom: 1px solid lightseagreen;
+    border-bottom: 1px solid white;
 }
 
 .workshop-link a:hover {
-    color: lightseagreen;
+    color: white;
 }
 
 /* Bamboo Pavilion styles*/

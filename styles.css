@@ -1,6 +1,7 @@
 /* master styles*/
 
 body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0px;
 }
 
@@ -104,13 +105,13 @@ body {
 
 .workshop-text .abstract {
     transition: 0.75s;
-    font-weight: 400px;
+    font-weight: 200px;
     color: transparent;
 }
 
 .workshop-text:hover .abstract {
     color: white;
-    font-weight: 400px;
+    font-weight: 200px;
   }
 
 .workshop-text .logo {
@@ -125,10 +126,12 @@ body {
 .workshop-text .workshop-link {
     transition: 0.75s;
     filter: opacity(0%);
+    font-weight: 100px;
 }
 
 .workshop-text:hover .workshop-link {
     filter: opacity(100%);
+    font-weight: 100px;
   }
 
 .darkening {
@@ -138,7 +141,7 @@ body {
 }
 
 .workshop-link {
-    padding-bottom: 25px;
+    padding-bottom: 30px;
     height: 20px;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.75s;
@@ -158,5 +161,36 @@ body {
     color: lightseagreen;
 }
 
-/* Carpentry workshop styles*/
+/* Bamboo workshop styles*/
+
+.bamboo-contents{
+    margin: 10px;
+    display: -moz-grid-group;
+    grid-gap: 10px;
+}
+.bamboo-content {
+    position: relative;
+}
+
+.bamboo-background {
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bamboo-abstract {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 40px;
+}
 

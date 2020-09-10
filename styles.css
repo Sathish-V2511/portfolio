@@ -57,6 +57,21 @@ body {
     color: black;
 }
 
+/* Cursor styles */
+.cursor
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    transition: 0.1s;
+    clip-path: circle(50px at var(--x) var(--y));
+}
+
+.container a:hover ~ .cursor
+{
+   clip-path: circle(100px at var(--x) var(--y)); 
+}
 
 /* About styles*/
 .about-contents {

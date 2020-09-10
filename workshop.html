@@ -132,6 +132,8 @@
         
     </div>
 
+    <div class="cursor"></div>
+
 </body>
 <script>
     const workshopcontents = document.querySelectorAll('.workshop-content');
@@ -146,5 +148,11 @@
       workshopcontent.childNodes[1].classList.remove('darkening');
     });
   });
+
+  const pos = document.documentElement;
+  pos.addEventListener('mousemove', e => {
+      pos.style.setProperty('--x', e.clientX + 'px');
+      pos.style.setProperty('--y', e.clientY + 'px')
+  })
 </script>
 </html>

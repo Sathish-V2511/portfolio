@@ -8,6 +8,8 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr;
+    cursor: default;
+    z-index: 1;
 }
 
 /* navigation bar styles*/
@@ -64,11 +66,12 @@ body {
     width: 100%;
     height: 100%;
     pointer-events: none;
+    background: #707070;
     transition: 0.1s;
     clip-path: circle(50px at var(--x) var(--y));
 }
 
-.container a:hover ~ .cursor
+.container :hover ~ .cursor
 {
    clip-path: circle(100px at var(--x) var(--y)); 
 }

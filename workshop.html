@@ -7,6 +7,7 @@
 </head>
 
 <body>
+
     <div class="Container">
         <div class="nav">
             <div class="left">
@@ -48,7 +49,7 @@
                     <div class="workshop-text">
                         <div class="logo">
                             <a href="floating-pavilion.html">
-                                <img src = "images/Floating.png" style="width:500px;height:100%;">
+                                <img src = "images/Floating.png" style="width:100%; height:auto;">
                             </a>
                         </div>
                         <div class="workshop-link">
@@ -67,7 +68,7 @@
                     <div class="workshop-text">
                         <div class="logo">
                             <a href="bamboo-workshop.html">
-                                <img src = "images/bamboo.png" style="width:500px;height:100%;">
+                                <img src = "images/bamboo.png" style="width:100%; height:auto;">
                             </a>
                         </div>
                         <div class="workshop-link">
@@ -86,7 +87,7 @@
                     <div class="workshop-text">
                         <div class="logo">
                             <a href="carpentry-workshop.html">
-                            <img src = "images/Carpentry.png" style="width:500px;height:100%;">
+                            <img src = "images/Carpentry.png" style="width:100%; height:auto;">
                             </a>
                         </div>
                         <div class="workshop-link">
@@ -132,8 +133,6 @@
         
     </div>
 
-    <div class="cursor"></div>
-
 </body>
 <script>
     const workshopcontents = document.querySelectorAll('.workshop-content');
@@ -148,11 +147,5 @@
       workshopcontent.childNodes[1].classList.remove('darkening');
     });
   });
-
-  const pos = document.documentElement;
-  pos.addEventListener('mousemove', e => {
-      pos.style.setProperty('--x', e.clientX + 'px');
-      pos.style.setProperty('--y', e.clientY + 'px')
-  })
 </script>
 </html>

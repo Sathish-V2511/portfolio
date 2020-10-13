@@ -59,23 +59,6 @@ body {
     color: black;
 }
 
-/* Cursor styles */
-.cursor
-{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    background: #707070;
-    transition: 0.1s;
-    clip-path: circle(50px at var(--x) var(--y));
-}
-
-.container :hover ~ .cursor
-{
-   clip-path: circle(100px at var(--x) var(--y)); 
-}
-
 /* About styles*/
 .about-contents {
     margin: 10px;
@@ -102,7 +85,7 @@ body {
 
 .workshop-background {
     height: 760px;
-    width: 100%;
+    max-width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -123,7 +106,7 @@ body {
 }
 
 .logo {
-    width: 50%;
+    /*width: 50%;*/
     margin-bottom: 5px;
     display: flex;
     flex-direction: row;
@@ -194,14 +177,14 @@ body {
     display: grid;
     margin-right: 30px;
     margin-left: 30px;
-    height: 800px;
-    grid-template-columns: 1fr 1fr 300px;
+    height: 760px;
+    grid-template-columns: 1fr 1fr 200px;
     grid-template-rows: 70px 1fr 1fr;
     grid-gap: 10px;
     grid-template-areas:
         "header header header"
-        "content-1 content-2 sidebar"
-        "content-1 content-3 sidebar";
+        "content-1 content-1 sidebar"
+        "content-2 content-3 sidebar";
   }
 
   .header {
@@ -233,7 +216,6 @@ body {
 /* Footer Style */
 
 .footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;

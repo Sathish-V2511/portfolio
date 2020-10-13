@@ -73,12 +73,24 @@ body {
 
 /* Workshop styles*/
 
-.workshop-contents{
-    margin: 30px;
+.workshop-content{
+    /*margin: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 30px;
+    grid-gap: 30px;*/
+    float: left;
+    width: 30.75%;
+    margin: 16px;
+    padding: 0 8px;*/
 }
+
+@media screen and (max-width: 900px) {
+    .workshop-content {
+      width: 100%;
+      display: block;
+    }
+  }
+
 .workshop-content {
     position: relative;
 }
@@ -107,7 +119,7 @@ body {
 
 .logo {
     /*width: 50%;*/
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -137,6 +149,7 @@ body {
     transition: 0.75s;
     filter: opacity(0%);
     font-weight: 100px;
+    margin-bottom: 15px;
 }
 
 .workshop-text:hover .workshop-link {
@@ -177,6 +190,39 @@ body {
     display: grid;
     margin-right: 30px;
     margin-left: 30px;
+    height: 600px;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: 70px 1fr;
+    grid-gap: 30px;
+    grid-template-areas:
+        "header header"
+        "content-1 sidebar";
+  }
+
+  .header {
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    padding-top: 0px;
+
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+  }
+  
+  .content-1 {
+    grid-area: content-1;
+  }
+
+/* floating Pavilion styles*/
+
+.floating-grid {
+    display: grid;
+    margin-right: 30px;
+    margin-left: 30px;
     height: 760px;
     grid-template-columns: 1fr 1fr 200px;
     grid-template-rows: 70px 1fr 1fr;
@@ -213,9 +259,54 @@ body {
     grid-area: content-3;
   }
 
+
+  /* carpentry workshop styles*/
+
+.carpentry-grid {
+    display: grid;
+    margin-right: 30px;
+    margin-left: 30px;
+    height: 760px;
+    grid-template-columns: 1fr 1fr 200px;
+    grid-template-rows: 70px 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+        "header header header"
+        "content-1 content-1 sidebar"
+        "content-2 content-3 sidebar";
+  }
+
+  .header {
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    padding-top: 0px;
+
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+  }
+  
+  .content-1 {
+    grid-area: content-1;
+  }
+  
+  .content-2 {
+    grid-area: content-2;
+  }
+  
+  .content-3 {
+    grid-area: content-3;
+  }
+
+
 /* Footer Style */
 
 .footer {
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;

@@ -95,6 +95,10 @@ body {
     position: relative;
 }
 
+.workshop-content {
+    box-shadow: 6px 6px 12px #707070;
+  }
+
 .workshop-background {
     height: 760px;
     max-width: 100%;

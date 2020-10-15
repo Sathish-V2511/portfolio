@@ -220,7 +220,7 @@ body {
   
   .content-1 {
     grid-area: content-1;
-  }*/
+  }
 
   .sidebar {
     position: absolute;
@@ -233,6 +233,71 @@ body {
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 40px;
+  }*/
+
+  .slidebar1 {
+    margin-right: 30px;
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .background-1 {
+    height: auto;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .slidebar1-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 20%;
+    text-align: justify;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    margin: 30px;
+    color: white; 
+  }
+
+  .slidebarabstract{
+    display: inline-block;
+    position: relative;
+  }
+
+  .slidebarabstract::after{
+    content:'';
+    display:block;
+    width: 0;
+    height: 15px;
+    background: #707070;
+    position: absolute;
+    bottom: 10%;
+    z-index: -1;
+
+    -webkit-transition: width 1s;
+    -moz-transition: width 1s;
+    -o-transition: width 1s;
+    transition: width 1s;
+
+  }
+
+  .slidebarabstract:hover::after{
+    width: 100%;
+  }
+
+  @media screen and (max-width: 900px) {
+    .slidebar1 {
+      width: 100%;
+      display: block;
+    }
   }
 
 /* floating Pavilion styles*/

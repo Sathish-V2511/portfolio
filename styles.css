@@ -10,11 +10,19 @@ body {
     grid-template-columns: 1fr;
     cursor: default;
     z-index: 1;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 1fr 70px;
+    grid-gap: 10px;
+    grid-template-areas:
+        "nav"
+        "wrapper"
+        "footer";
 }
 
 /* navigation bar styles*/
 
 .nav {
+    grid-area: nav;
     display: flex;
     justify-content: space-between;
     padding: 30px;
@@ -72,6 +80,9 @@ body {
 }
 
 /* Workshop styles*/
+.workshop-grid {
+  grid-area: wrapper;
+}
 
 .workshop-content{
     /*margin: 30px;
@@ -189,6 +200,9 @@ body {
 }
 
 /* Bamboo Pavilion styles*/
+  .bamboo-grid {
+    grid-area: wrapper;
+  }
 
   .slidebar1 {
     margin-right: 30px;
@@ -197,8 +211,8 @@ body {
     grid-template-columns: 1fr;
   }
   .background-1 {
-    height: auto;
     max-width: 100%;
+    height: auto;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -347,7 +361,8 @@ body {
 /* Footer Style */
 
 .footer {
-    position: fixed;
+  grid-area: footer;
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;

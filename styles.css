@@ -7,16 +7,21 @@ body {
 
 .container {
     display: grid;
+    max-width: 100%;
+    height: auto;
     grid-template-columns: 1fr;
     cursor: default;
     z-index: 1;
     grid-template-columns: 1fr;
-    grid-template-rows: 70px 1fr 70px;
-    grid-gap: 10px;
+    grid-template-rows: 70px 1fr 50px;
+    grid-gap: 5px;
     grid-template-areas:
         "nav"
         "wrapper"
         "footer";
+}
+.wrapper {
+  grid-area: wrapper;
 }
 
 /* navigation bar styles*/
@@ -80,9 +85,6 @@ body {
 }
 
 /* Workshop styles*/
-.workshop-grid {
-  grid-area: wrapper;
-}
 
 .workshop-content{
     /*margin: 30px;
@@ -200,10 +202,7 @@ body {
 }
 
 /* Bamboo Pavilion styles*/
-  .bamboo-grid {
-    grid-area: wrapper;
-  }
-
+  
   .slidebar1 {
     margin-right: 30px;
     margin-left: 30px;
@@ -234,7 +233,7 @@ body {
     padding-bottom: 50px;
     margin: 30px;
     color: white; 
-    background-image: linear-gradient(to right, transparent 50%, #707070 50%);
+    background-image: linear-gradient(to right, transparent 40%,rgba(70,70,70,0.90));
     background-size: 200%;
     transition: 0.5s;
   }

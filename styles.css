@@ -240,6 +240,7 @@ body {
 
   .slidebar1-text:hover {
     background-position: 100%;
+    background-image: linear-gradient(to right, transparent 40%,rgba(70,70,70,0.90));
   }
 
   /*.slidebarabstract::after{
